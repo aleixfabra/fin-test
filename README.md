@@ -6,6 +6,8 @@ Install project dependencies:
 make deps
 ```
 Create database schema:
+
+(Make sure you have defined the `DATABASE_URL` variable in the .env file with its username and password)
 ```
 make schema
 ```
@@ -26,6 +28,7 @@ make frontend-dev-server
 
 ## Testing
 Create test schema:
+(Make sure you have defined the `DATABASE_URL` variable in the .env.test file with its username and password)
 ```
 make test-schema
 ```
