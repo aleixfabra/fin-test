@@ -1,0 +1,13 @@
+default:
+    suites:
+        default:
+            contexts:
+                - App\Tests\Behat\ApiContext
+
+    extensions:
+        DAMA\DoctrineTestBundle\Behat\ServiceContainer\DoctrineExtension: ~
+        FriendsOfBehat\SymfonyExtension:
+            kernel:
+                environment: test
+            bootstrap: tests/bootstrap.php
+

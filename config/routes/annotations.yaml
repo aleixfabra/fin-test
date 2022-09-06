@@ -1,0 +1,13 @@
+portfolio_controllers:
+    resource: ../../src/Infrastructure/Portfolio/Web/Controller
+    type: annotation
+    prefix: api
+
+order_controllers:
+    resource: ../../src/Infrastructure/Order/Web/Controller
+    type: annotation
+    prefix: api
+
+kernel:
+    resource: ../../src/Kernel.php
+    type: annotation
