@@ -28,7 +28,6 @@ final class FindPortfolioOrders
             throw new PortfolioNotFoundException($portfolioId);
         }
 
-        dd($portfolio->orders());
         return $portfolio;
     }
 }
