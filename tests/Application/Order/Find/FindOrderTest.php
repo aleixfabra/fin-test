@@ -8,7 +8,6 @@ use App\Application\Order\Find\FindOrder;
 use App\Domain\Order\OrderNotFoundException;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Order\OrderMother;
-use App\Tests\Domain\Portfolio\PortfolioMother;
 
 final class FindOrderTest extends UnitTestCase
 {

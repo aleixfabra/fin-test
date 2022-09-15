@@ -12,7 +12,6 @@ use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\HttpKernel\KernelInterface;
 
-
 final class ApiContext implements Context
 {
     private KernelInterface $kernel;
@@ -26,6 +25,7 @@ final class ApiContext implements Context
 
     /**
      * @Given I send a :method request to :url
+     *
      * @throws Exception
      */
     public function iSendARequestTo(string $method, string $url): void
@@ -35,11 +35,12 @@ final class ApiContext implements Context
 
     /**
      * @Given I send a :method request to :url with body:
+     *
      * @throws Exception
      */
     public function iSendARequestToWithBody(string $method, string $url, PyStringNode $body): void
     {
-        $this->response = $this->kernel->handle(Request::create($url, $method,  [], [], [], ['CONTENT_TYPE' => 'application/json'], $body->getRaw()));
+        $this->response = $this->kernel->handle(Request::create($url, $method, [], [], [], ['CONTENT_TYPE' => 'application/json'], $body->getRaw()));
     }
 
     /**
@@ -48,13 +49,7 @@ final class ApiContext implements Context
     public function theResponseStatusCodeShouldBe(int $expectedResponseStatusCode): void
     {
         if ($this->response->getStatusCode() !== $expectedResponseStatusCode) {
-            throw new RuntimeException(
-                sprintf(
-                    "The response status code does not match. \n Actual: <%s>\n Expected: <%s>",
-                    $this->response->getStatusCode(),
-                    $expectedResponseStatusCode
-                )
-            );
+            throw new RuntimeException(sprintf("The response status code does not match. \n Actual: <%s>\n Expected: <%s>", $this->response->getStatusCode(), $expectedResponseStatusCode));
         }
     }
 
@@ -77,11 +72,7 @@ final class ApiContext implements Context
         $expected = self::sanitizeOutput($expectedResponseBody);
 
         if ($actual !== $expected) {
-            throw new RuntimeException(sprintf(
-                "The response body does not match.\n Actual: <%s>\n Expected: <%s>",
-                $actual,
-                $expected
-            ));
+            throw new RuntimeException(sprintf("The response body does not match.\n Actual: <%s>\n Expected: <%s>", $actual, $expected));
         }
     }
 

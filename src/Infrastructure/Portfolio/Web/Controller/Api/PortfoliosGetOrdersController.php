@@ -54,7 +54,7 @@ final class PortfoliosGetOrdersController extends ApiController
                 'allocation' => $order->getAllocationId(),
                 'shares' => $order->getShares(),
                 'type' => $order->getType(),
-                'completed' => $order->isCompleted()
+                'completed' => $order->isCompleted(),
             ];
         }, $portfolio->getOrders()->getValues());
     }

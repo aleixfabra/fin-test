@@ -62,8 +62,6 @@ final class CreateSellOrderTest extends UnitTestCase
         $this->createSellOrder->__invoke($createOrderRequest);
     }
 
-    /**
-     */
     public function testItShouldNotCreateASellOrderWithNonExistingPortfolio(): void
     {
         $this->expectException(PortfolioNotFoundException::class);

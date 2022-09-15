@@ -20,6 +20,7 @@ fixtures:
 
 lint:
 	./vendor/bin/php-cs-fixer fix src
+	./vendor/bin/php-cs-fixer fix tests
 	yarn --cwd apps/frontend lint --fix
 
 test:
