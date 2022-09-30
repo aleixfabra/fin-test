@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Infrastructure\Portfolio\Persistence;
 
-use App\Domain\Portfolio\PortfolioRepository;
+use App\Portfolios\Domain\Portfolio\PortfolioRepository;
 use App\Tests\Domain\Portfolio\PortfolioMother;
 use App\Tests\Infrastructure\InfrastructureTestCase;
 

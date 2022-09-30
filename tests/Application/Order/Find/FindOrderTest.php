@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Order\Find;
 
-use App\Application\Order\Find\FindOrder;
-use App\Domain\Order\OrderNotFoundException;
+use App\Portfolios\Application\Order\Find\FindOrder;
+use App\Portfolios\Domain\Order\OrderNotFoundException;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Order\OrderMother;
 

@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Order\Create;
 
-use App\Application\Allocation\Find\FindAllocation;
-use App\Application\Order\Create\CreateBuyOrder;
-use App\Application\Order\Create\CreateOrderFactory;
-use App\Application\Order\Create\CreateSellOrder;
-use App\Application\Portfolio\Find\FindPortfolio;
-use App\Domain\Order\Order;
+use App\Portfolios\Application\Allocation\Find\FindAllocation;
+use App\Portfolios\Application\Order\Create\CreateBuyOrder;
+use App\Portfolios\Application\Order\Create\CreateOrderFactory;
+use App\Portfolios\Application\Order\Create\CreateSellOrder;
+use App\Portfolios\Application\Portfolio\Find\FindPortfolio;
+use App\Portfolios\Domain\Order\Order;
 use App\Tests\Application\UnitTestCase;
 use InvalidArgumentException;
 

@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Allocation\Find;
 
-use App\Application\Allocation\Find\FindAllocation;
-use App\Domain\Allocation\AllocationNotFoundException;
+use App\Portfolios\Application\Allocation\Find\FindAllocation;
+use App\Portfolios\Domain\Allocation\AllocationNotFoundException;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Allocation\AllocationMother;
 

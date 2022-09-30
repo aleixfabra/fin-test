@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Infrastructure\Order\Persistence;
 
-use App\Domain\Order\OrderRepository;
-use App\Domain\Portfolio\PortfolioRepository;
+use App\Portfolios\Domain\Order\OrderRepository;
+use App\Portfolios\Domain\Portfolio\PortfolioRepository;
 use App\Tests\Domain\Order\OrderMother;
 use App\Tests\Domain\Portfolio\PortfolioMother;
 use App\Tests\Infrastructure\InfrastructureTestCase;

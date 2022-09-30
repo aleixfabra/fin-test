@@ -4,12 +4,12 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Order\Complete;
 
-use App\Application\Allocation\Find\FindAllocation;
-use App\Application\Order\Complete\CompleteSellOrder;
-use App\Application\Order\Find\FindOrder;
-use App\Domain\Allocation\AllocationNotFoundException;
-use App\Domain\Allocation\SellOrderExceededAllocationSharesException;
-use App\Domain\Order\OrderNotFoundException;
+use App\Portfolios\Application\Allocation\Find\FindAllocation;
+use App\Portfolios\Application\Order\Complete\CompleteSellOrder;
+use App\Portfolios\Application\Order\Find\FindOrder;
+use App\Portfolios\Domain\Allocation\AllocationNotFoundException;
+use App\Portfolios\Domain\Allocation\SellOrderExceededAllocationSharesException;
+use App\Portfolios\Domain\Order\OrderNotFoundException;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Allocation\AllocationMother;
 use App\Tests\Domain\Order\OrderMother;

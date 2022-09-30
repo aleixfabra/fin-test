@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Domain\Order;
 
-use App\Domain\Order\Order;
-use App\Domain\Portfolio\Portfolio;
+use App\Portfolios\Domain\Order\Order;
+use App\Portfolios\Domain\Portfolio\Portfolio;
 use App\Tests\Domain\Portfolio\PortfolioMother;
 
 final class OrderMother

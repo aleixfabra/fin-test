@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Order\Complete;
 
-use App\Application\Order\Complete\CompleteBuyOrder;
-use App\Application\Order\Find\FindOrder;
-use App\Domain\Order\OrderNotFoundException;
+use App\Portfolios\Application\Order\Complete\CompleteBuyOrder;
+use App\Portfolios\Application\Order\Find\FindOrder;
+use App\Portfolios\Domain\Order\OrderNotFoundException;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Allocation\AllocationMother;
 use App\Tests\Domain\Order\OrderMother;

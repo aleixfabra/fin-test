@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Portfolio\Find;
 
-use App\Application\Portfolio\Find\FindPortfolio;
-use App\Domain\Portfolio\PortfolioNotFoundException;
+use App\Portfolios\Application\Portfolio\Find\FindPortfolio;
+use App\Portfolios\Domain\Portfolio\PortfolioNotFoundException;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Portfolio\PortfolioMother;
 

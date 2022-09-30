@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Portfolio\Create;
 
-use App\Application\Portfolio\Create\CreatePortfolioRequest;
-use App\Domain\Portfolio\Portfolio;
+use App\Portfolios\Application\Portfolio\Create\CreatePortfolioRequest;
+use App\Portfolios\Domain\Portfolio\Portfolio;
 
 final class CreatePortfolioRequestMother
 {

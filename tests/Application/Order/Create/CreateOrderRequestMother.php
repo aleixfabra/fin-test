@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Order\Create;
 
-use App\Application\Order\Create\CreateOrderRequest;
-use App\Domain\Order\Order;
+use App\Portfolios\Application\Order\Create\CreateOrderRequest;
+use App\Portfolios\Domain\Order\Order;
 
 final class CreateOrderRequestMother
 {

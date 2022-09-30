@@ -3,16 +3,16 @@ services:
     autowire: true
     autoconfigure: true
 
-  App\Domain\Portfolio\PortfolioRepository:
-    class: App\Infrastructure\Portfolio\Persistence\DoctrinePortfolioRepository
+  App\Portfolios\Domain\Portfolio\PortfolioRepository:
+    class: App\Portfolios\Infrastructure\Portfolio\Persistence\DoctrinePortfolioRepository
     public: true
 
-  App\Domain\Order\OrderRepository:
-    class: App\Infrastructure\Order\Persistence\DoctrineOrderRepository
+  App\Portfolios\Domain\Order\OrderRepository:
+    class: App\Portfolios\Infrastructure\Order\Persistence\DoctrineOrderRepository
     public: true
 
-  App\Domain\Allocation\AllocationRepository:
-    class: App\Infrastructure\Allocation\Persistence\DoctrineAllocationRepository
+  App\Portfolios\Domain\Allocation\AllocationRepository:
+    class: App\Portfolios\Infrastructure\Allocation\Persistence\DoctrineAllocationRepository
     public: true
 
   App\Tests\Behat\:

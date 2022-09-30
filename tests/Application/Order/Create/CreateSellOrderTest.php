@@ -4,11 +4,11 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Order\Create;
 
-use App\Application\Allocation\Find\FindAllocation;
-use App\Application\Order\Create\CreateSellOrder;
-use App\Application\Portfolio\Find\FindPortfolio;
-use App\Domain\Allocation\AllocationNotFoundException;
-use App\Domain\Portfolio\PortfolioNotFoundException;
+use App\Portfolios\Application\Allocation\Find\FindAllocation;
+use App\Portfolios\Application\Order\Create\CreateSellOrder;
+use App\Portfolios\Application\Portfolio\Find\FindPortfolio;
+use App\Portfolios\Domain\Allocation\AllocationNotFoundException;
+use App\Portfolios\Domain\Portfolio\PortfolioNotFoundException;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Order\OrderMother;
 use App\Tests\Domain\Portfolio\PortfolioMother;

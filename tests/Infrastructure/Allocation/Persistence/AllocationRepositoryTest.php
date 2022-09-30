@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Infrastructure\Allocation\Persistence;
 
-use App\Domain\Allocation\AllocationRepository;
-use App\Domain\Portfolio\PortfolioRepository;
+use App\Portfolios\Domain\Allocation\AllocationRepository;
+use App\Portfolios\Domain\Portfolio\PortfolioRepository;
 use App\Tests\Domain\Allocation\AllocationMother;
 use App\Tests\Domain\Portfolio\PortfolioMother;
 use App\Tests\Infrastructure\InfrastructureTestCase;

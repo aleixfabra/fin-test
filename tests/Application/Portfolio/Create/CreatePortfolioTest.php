@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace App\Tests\Application\Portfolio\Create;
 
-use App\Application\Portfolio\Create\CreatePortfolio;
+use App\Portfolios\Application\Portfolio\Create\CreatePortfolio;
 use App\Tests\Application\UnitTestCase;
 use App\Tests\Domain\Portfolio\PortfolioMother;
 

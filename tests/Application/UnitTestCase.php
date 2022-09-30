@@ -4,9 +4,9 @@ declare(strict_types=1);
 
 namespace App\Tests\Application;
 
-use App\Domain\Allocation\AllocationRepository;
-use App\Domain\Order\OrderRepository;
-use App\Domain\Portfolio\PortfolioRepository;
+use App\Portfolios\Domain\Allocation\AllocationRepository;
+use App\Portfolios\Domain\Order\OrderRepository;
+use App\Portfolios\Domain\Portfolio\PortfolioRepository;
 use PHPUnit\Framework\MockObject\MockObject;
 use PHPUnit\Framework\TestCase;
 

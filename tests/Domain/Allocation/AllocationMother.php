@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace App\Tests\Domain\Allocation;
 
-use App\Domain\Allocation\Allocation;
-use App\Domain\Portfolio\Portfolio;
+use App\Portfolios\Domain\Allocation\Allocation;
+use App\Portfolios\Domain\Portfolio\Portfolio;
 use App\Tests\Domain\Portfolio\PortfolioMother;
 
 final class AllocationMother

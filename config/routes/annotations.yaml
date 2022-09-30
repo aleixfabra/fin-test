@@ -1,10 +1,10 @@
 portfolio_controllers:
-    resource: ../../src/Infrastructure/Portfolio/Web/Controller
+    resource: ../../src/Portfolios/Infrastructure/Portfolio/Web/Controller
     type: annotation
     prefix: api
 
 order_controllers:
-    resource: ../../src/Infrastructure/Order/Web/Controller
+    resource: ../../src/Portfolios/Infrastructure/Order/Web/Controller
     type: annotation
     prefix: api
 
