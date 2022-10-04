@@ -6,6 +6,6 @@ namespace App\Shared\Domain;
 
 use Exception;
 
-class FinizensException extends Exception
+abstract class FinizensException extends Exception
 {
 }
