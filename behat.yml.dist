@@ -2,7 +2,7 @@ default:
     suites:
         default:
             contexts:
-                - App\Tests\Behat\ApiContext
+                - App\Tests\Portfolios\Behat\ApiContext
 
     extensions:
         DAMA\DoctrineTestBundle\Behat\ServiceContainer\DoctrineExtension: ~

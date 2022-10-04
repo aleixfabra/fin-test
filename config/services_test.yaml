@@ -15,5 +15,5 @@ services:
     class: App\Portfolios\Infrastructure\Allocation\Persistence\DoctrineAllocationRepository
     public: true
 
-  App\Tests\Behat\:
-    resource: '../tests/Behat/*'
+  App\Tests\Portfolios\Behat\:
+    resource: '../tests/Portfolios/Behat/*'
